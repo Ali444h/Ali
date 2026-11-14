@@ -1,0 +1,531 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="copyright" content="CNLC - Copyright 2026. All rights reserved."><title>CNLC | Halfaya Project - Staff & License Portal</title><style>:root{--bg-base:#062a4e;--bg-mid:#0a4d8c;--bg-glow:#0284c7;--glass-panel:rgba(8,30,58,0.56);--glass-card:rgba(255,255,255,0.055);--glass-hover:rgba(56,189,248,0.16);--glass-active:rgba(14,165,233,0.28);--border-glass:rgba(186,230,253,0.22);--text-main:#f1f5f9;--text-muted:#cbd5e1;}*{box-sizing:border-box;font-family:'Segoe UI',system-ui,-apple-system,sans-serif;}body{margin:0;min-height:100vh;color:var(--text-main);background:radial-gradient(circle at 82% 28%,#1496db 0%,#075985 38%,#072547 78%,#04162d 100%);background-attachment:fixed;overflow-x:hidden;padding-bottom:66px;}.tech-bg{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;}.tech-dots{position:absolute;inset:0;background-image:radial-gradient(rgba(125,211,252,0.16) 1.5px,transparent 1.5px);background-size:24px 24px;mask-image:linear-gradient(to right,rgba(0,0,0,0.65),rgba(0,0,0,0.15),rgba(0,0,0,0.85));}.tech-globe{position:absolute;right:-140px;top:8%;width:680px;height:680px;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(186,230,253,0.38),rgba(14,165,233,0.18) 45%,rgba(3,105,161,0.05) 70%,transparent 75%);box-shadow:inset 18px 0 45px rgba(224,242,254,0.45),0 0 90px rgba(56,189,248,0.25);border:1.5px solid rgba(186,230,253,0.28);}.tech-orbit-1{position:absolute;right:-195px;top:2%;width:790px;height:790px;border-radius:50%;border:2px solid rgba(12,74,110,0.55);}.tech-orbit-2{position:absolute;right:-250px;top:-4%;width:900px;height:900px;border-radius:50%;border:1px dashed rgba(186,230,253,0.25);animation:slowSpin 90s linear infinite;}@keyframes slowSpin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}header{background:rgba(6,24,48,0.68);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--border-glass);padding:12px 26px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;position:sticky;top:0;z-index:100;box-shadow:0 8px 30px rgba(0,0,0,0.28);}.brand{display:flex;align-items:center;gap:15px;}.logo-box{background:#ffffff;padding:5px 13px;border-radius:10px;box-shadow:0 4px 14px rgba(0,0,0,0.22);display:flex;align-items:center;justify-content:center;}.brand-info h1{margin:0;font-size:17.5px;font-weight:700;color:#ffffff;letter-spacing:0.5px;}.brand-info p{margin:2px 0 0;font-size:11px;color:#bae6fd;letter-spacing:1.3px;text-transform:uppercase;}.header-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;}.mode-badge{padding:6px 12px;border-radius:20px;font-size:12px;font-weight:600;background:rgba(255,255,255,0.08);border:1px solid var(--border-glass);color:#e0f2fe;}.mode-badge.unlocked{background:rgba(16,185,129,0.22);border-color:rgba(52,211,153,0.5);color:#6ee7b7;}.hdr-btn{background:rgba(255,255,255,0.1);color:#f8fafc;border:1px solid var(--border-glass);padding:8px 14px;border-radius:8px;font-size:12.5px;font-weight:600;cursor:pointer;transition:all 0.25s ease;backdrop-filter:blur(8px);}.hdr-btn:hover{background:rgba(56,189,248,0.26);border-color:#7dd3fc;transform:translateY(-1px);}.hdr-btn.login{background:rgba(14,165,233,0.28);border-color:rgba(125,211,252,0.5);}.container{max-width:1500px;margin:22px auto;padding:0 22px;display:grid;grid-template-columns:1.35fr 0.92fr;gap:22px;}@media (max-width:960px){.container{grid-template-columns:1fr;}}.glass-col{background:var(--glass-panel);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);border:1px solid var(--border-glass);border-radius:16px;padding:20px;box-shadow:0 14px 40px rgba(3,15,34,0.35),inset 0 1px 0 rgba(255,255,255,0.14);animation:fadeUp 0.5s ease-out;}@keyframes fadeUp{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}.col-header{display:flex;justify-content:space-between;align-items:center;padding-bottom:11px;margin-bottom:14px;border-bottom:1px solid rgba(255,255,255,0.12);}.col-title{font-size:14.5px;font-weight:700;color:#e0f2fe;letter-spacing:0.4px;}.pill-count{background:rgba(56,189,248,0.2);border:1px solid rgba(125,211,252,0.35);color:#bae6fd;padding:4px 11px;border-radius:12px;font-size:12px;font-weight:700;}.search-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:10px;margin-bottom:14px;}input,select{width:100%;padding:9.5px 12px;border-radius:9px;border:1px solid rgba(186,230,253,0.24);background:rgba(5,20,42,0.5);color:#f8fafc;font-size:13.5px;outline:none;transition:all 0.25s ease;}input::placeholder{color:#94a3b8;}input:focus,select:focus{border-color:#38bdf8;background:rgba(5,20,42,0.78);box-shadow:0 0 0 3px rgba(56,189,248,0.18);}input[readonly]{background:rgba(7,25,50,0.36);color:#f1f5f9;}select option{background:#082344;color:#f8fafc;}.table-box{height:540px;overflow-y:auto;border-radius:12px;border:1px solid rgba(186,230,253,0.18);background:rgba(4,18,38,0.42);}.table-box::-webkit-scrollbar{width:7px;}.table-box::-webkit-scrollbar-track{background:rgba(7,25,50,0.3);}.table-box::-webkit-scrollbar-thumb{background:rgba(125,211,252,0.35);border-radius:4px;}table{width:100%;border-collapse:collapse;font-size:13.5px;}thead th{position:sticky;top:0;z-index:10;background:rgba(7,32,64,0.92);backdrop-filter:blur(12px);color:#bae6fd;text-align:left;padding:12px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.6px;border-bottom:1px solid rgba(125,211,252,0.28);}tbody tr{border-bottom:1px solid rgba(255,255,255,0.06);cursor:pointer;transition:transform 0.26s cubic-bezier(0.22,1,0.36,1),background-color 0.26s ease,box-shadow 0.26s ease;animation:rowEnter 0.35s ease backwards;}@keyframes rowEnter{from{opacity:0;transform:translateX(-10px);}to{opacity:1;transform:translateX(0);}}tbody tr:hover{background:var(--glass-hover);transform:translateX(6px);}tbody tr.active{background:var(--glass-active);box-shadow:inset 4px 0 0 #38bdf8;transform:translateX(7px);}td{padding:11px 12px;color:#f8fafc;}thead th:nth-child(2),tbody td:nth-child(2){white-space:nowrap;}.id-tag{display:inline-block;min-width:28px;text-align:center;padding:3px 7px;border-radius:6px;background:rgba(56,189,248,0.16);border:1px solid rgba(125,211,252,0.3);color:#bae6fd;font-weight:700;font-size:12px;}.lic-pill{display:inline-block;padding:3px 8px;border-radius:6px;font-size:12px;font-weight:600;background:rgba(16,185,129,0.16);border:1px solid rgba(52,211,153,0.32);color:#6ee7b7;}.lic-empty{color:#94a3b8;font-size:12px;}.profile-content{transition:opacity 0.22s ease,transform 0.22s ease;}.profile-content.switching{opacity:0.45;transform:translateY(4px);}.lbl{display:block;font-size:11.5px;font-weight:600;color:#bae6fd;margin-bottom:4px;}.row-id-name{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:11px;}.row-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:11px;}.lic-details-box{background:rgba(5,20,42,0.55);border:1px solid rgba(125,211,252,0.26);border-radius:12px;padding:13px;min-height:115px;font-size:13px;line-height:1.6;color:#e2e8f0;white-space:pre-line;margin-bottom:14px;}.admin-bar{display:none;grid-template-columns:repeat(4,1fr);gap:10px;}.admin-bar.show{display:grid;animation:fadeUp 0.25s ease;}.btn-act{border:none;color:#fff;padding:10px 8px;border-radius:9px;font-size:12.5px;font-weight:700;cursor:pointer;transition:all 0.2s ease;box-shadow:0 4px 12px rgba(0,0,0,0.22);}.btn-act:hover{transform:translateY(-2px);filter:brightness(1.08);}.b-add{background:linear-gradient(135deg,#059669,#10b981);}.b-upd{background:linear-gradient(135deg,#1d4ed8,#3b82f6);}.b-del{background:linear-gradient(135deg,#be123c,#f43f5e);}.b-clr{background:linear-gradient(135deg,#334155,#64748b);}footer{position:fixed;bottom:0;left:0;right:0;background:rgba(5,18,38,0.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid rgba(125,211,252,0.24);padding:9px 20px;display:flex;justify-content:center;align-items:center;z-index:150;}.dev-badge{display:inline-flex;align-items:center;gap:9px;padding:5px 18px;border-radius:24px;background:linear-gradient(90deg,rgba(14,165,233,0.18),rgba(37,99,235,0.24));border:1px solid rgba(186,230,253,0.35);font-size:12.5px;color:#e0f2fe;}.green-dot{width:8px;height:8px;border-radius:50%;background:#10b981;box-shadow:0 0 8px #10b981;}.modal-bg{display:none;position:fixed;inset:0;background:rgba(4,14,28,0.78);backdrop-filter:blur(8px);z-index:300;align-items:center;justify-content:center;}.modal-bg.open{display:flex;}.modal-card{background:rgba(10,32,62,0.94);border:1px solid rgba(125,211,252,0.4);border-radius:16px;padding:24px;width:340px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,0.5);}.modal-card h3{margin:0 0 8px;color:#fff;font-size:17px;}.modal-card p{margin:0 0 16px;color:#bae6fd;font-size:12.5px;}.modal-row{display:flex;gap:10px;margin-top:14px;}.modal-row button{flex:1;padding:9px;border-radius:8px;border:none;font-weight:700;cursor:pointer;}.profile-identity{display:flex;align-items:center;gap:13px;padding:4px 2px 18px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.12)}.employee-avatar{width:54px;height:54px;flex:0 0 54px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#38bdf8,#1d4ed8);border:2px solid rgba(224,242,254,.55);box-shadow:0 5px 18px rgba(2,132,199,.28);font-weight:800;font-size:17px;letter-spacing:.5px;color:white}.identity-name{font-size:16px;font-weight:750;color:#fff}.identity-sub{font-size:12px;color:#bae6fd;margin-top:4px}.role-pill{display:inline-flex;align-items:center;padding:5px 9px;border-radius:999px;background:rgba(56,189,248,.14);border:1px solid rgba(125,211,252,.25);color:#bae6fd;font-size:11.5px;font-weight:650;white-space:nowrap}.license-state{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;white-space:nowrap}.license-state:before{content:"";width:8px;height:8px;border-radius:50%;background:#f59e0b;box-shadow:0 0 0 3px rgba(245,158,11,.13)}.license-state.has:before{background:#34d399;box-shadow:0 0 0 3px rgba(52,211,153,.13)}.license-alert{display:flex;align-items:flex-start;gap:10px;padding:12px 14px;border-radius:11px;background:rgba(245,158,11,.12);border:1px solid rgba(251,191,36,.3);color:#fde68a;font-size:12.5px;line-height:1.55;white-space:pre-wrap}.license-alert.has-license{background:rgba(16,185,129,.12);border-color:rgba(52,211,153,.3);color:#a7f3d0}.license-alert .alert-icon{font-size:17px;line-height:1}.copy-btn{position:absolute;right:7px;top:50%;transform:translateY(-50%);border:1px solid rgba(125,211,252,.25);background:rgba(14,165,233,.13);color:#bae6fd;border-radius:6px;padding:3px 7px;cursor:pointer}.copy-btn:hover{background:rgba(56,189,248,.3)}#txtPhone,#txtNationalID{padding-right:38px}.profile-content .row-2>div:has(.copy-btn){position:relative}.profile-content input[readonly]{border-color:transparent!important;background:rgba(255,255,255,.035)!important;box-shadow:none!important;padding-left:3px}.profile-content .row-2>div:has(.copy-btn) input[readonly]{padding-left:3px}.admin-mode .profile-content input{border:1px solid rgba(186,230,253,.24)!important;background:rgba(5,20,42,.5)!important;padding-left:12px!important}.admin-mode .profile-content input:focus{border-color:#38bdf8!important;box-shadow:0 0 0 3px rgba(56,189,248,.18)!important}.export-btn{background:rgba(16,185,129,.19);border-color:rgba(52,211,153,.42);color:#d1fae5}.export-btn:hover{background:rgba(16,185,129,.3);border-color:#6ee7b7}tbody tr{transition:transform .26s cubic-bezier(.22,1,.36,1),background .18s ease,box-shadow .18s ease}tbody tr:hover{background:rgba(56,189,248,.18)!important;box-shadow:inset 3px 0 0 #38bdf8}tbody td{vertical-align:middle}.glass-col{box-shadow:0 18px 48px rgba(2,12,30,.38),0 3px 12px rgba(56,189,248,.07),inset 0 1px 0 rgba(255,255,255,.14)}@media(max-width:700px){.profile-identity{padding-bottom:13px}.employee-avatar{width:46px;height:46px;flex-basis:46px}}.date-expired{border-color:#f43f5e!important;background:rgba(190,18,60,.22)!important;color:#fecdd3!important}.date-warning{border-color:#f59e0b!important;background:rgba(245,158,11,.18)!important;color:#fde68a!important}.status-expired{background:rgba(190,18,60,.22)!important;border-color:rgba(251,113,133,.5)!important;color:#fecdd3!important}.status-warning{background:rgba(245,158,11,.18)!important;border-color:rgba(251,191,36,.5)!important;color:#fde68a!important}.status-ok{background:rgba(16,185,129,.16)!important;border-color:rgba(52,211,153,.32)!important;color:#6ee7b7!important}.compliance-alert{display:flex;align-items:flex-start;gap:10px;padding:12px 14px;border-radius:11px;margin:0 0 14px;background:rgba(14,165,233,.12);border:1px solid rgba(125,211,252,.3);color:#bae6fd;font-size:12.5px;line-height:1.55;white-space:pre-line}.compliance-alert.alert-danger{background:rgba(190,18,60,.16);border-color:rgba(251,113,133,.5);color:#fecdd3}.compliance-alert.alert-warning{background:rgba(245,158,11,.14);border-color:rgba(251,191,36,.45);color:#fde68a}.compliance-alert.alert-ok{background:rgba(16,185,129,.12);border-color:rgba(52,211,153,.3);color:#a7f3d0}.status-pill{display:inline-block;padding:3px 8px;border-radius:6px;font-size:11px;font-weight:700;white-space:nowrap}.modern-clock{display:flex;align-items:center;gap:9px;padding:7px 13px;border-radius:14px;background:linear-gradient(135deg,rgba(15,23,42,.82),rgba(30,64,175,.55));border:1px solid rgba(125,211,252,.42);box-shadow:0 0 18px rgba(56,189,248,.2),inset 0 1px 0 rgba(255,255,255,.18);min-width:138px}.clock-dot{width:9px;height:9px;border-radius:50%;background:#34d399;box-shadow:0 0 0 4px rgba(52,211,153,.15),0 0 14px #34d399;animation:clockPulse 1.8s ease-in-out infinite}.clock-time{font-size:15px;font-weight:800;letter-spacing:1.2px;color:#e0f2fe;font-variant-numeric:tabular-nums;text-shadow:0 0 12px rgba(125,211,252,.65)}.clock-date{font-size:10px;color:#bae6fd;margin-left:3px;letter-spacing:.4px}@keyframes clockPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.82)}}@media(max-width:700px){.modern-clock{min-width:122px;padding:6px 9px}.clock-time{font-size:13px}} /* Interaction & motion polish */
+html{scroll-behavior:smooth}
+.table-box{scroll-behavior:smooth}
+.profile-content{transition:opacity .22s cubic-bezier(.22,1,.36,1),transform .22s cubic-bezier(.22,1,.36,1),filter .22s ease;will-change:opacity,transform}
+.profile-content.switching{opacity:.18;transform:translateY(6px) scale(.998);filter:blur(1px)}
+.lic-details-box,.compliance-alert,.status-pill,.role-pill,.lic-pill{transition:background-color .25s ease,border-color .25s ease,color .25s ease,box-shadow .25s ease}
+input,select,textarea{transition:border-color .2s ease,background-color .2s ease,box-shadow .2s ease,color .2s ease}
+.hdr-btn,.btn-act,.copy-btn,.modal-row button{transition:transform .18s cubic-bezier(.22,1,.36,1),background-color .2s ease,border-color .2s ease,filter .2s ease,box-shadow .2s ease}
+.hdr-btn:active,.btn-act:active,.copy-btn:active,.modal-row button:active{transform:translateY(0) scale(.97)}
+tbody tr:active{transform:translateX(3px) scale(.998)}
+.pill-count{transition:transform .25s cubic-bezier(.22,1,.36,1),background-color .25s ease,border-color .25s ease}
+.pill-count.bump{animation:countBump .32s cubic-bezier(.22,1,.36,1)}
+@keyframes countBump{0%{transform:scale(1)}45%{transform:scale(1.1)}100%{transform:scale(1)}}
+.modal-bg.open{animation:modalFade .18s ease both}
+.modal-bg.open .modal-card{animation:modalPop .22s cubic-bezier(.22,1,.36,1) both}
+@keyframes modalFade{from{opacity:0}to{opacity:1}}
+@keyframes modalPop{from{opacity:0;transform:translateY(12px) scale(.97)}to{opacity:1;transform:translateY(0) scale(1)}}
+button:focus-visible{outline:2px solid #7dd3fc;outline-offset:2px}
+.empty-row{cursor:default}
+.empty-row td{text-align:center;padding:34px 12px;color:#94a3b8;font-size:13px;cursor:default}
+.empty-row:hover,.empty-row:active{transform:none!important;background:transparent!important;box-shadow:none!important}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}.profile-content.switching{filter:none}}
+</style></head><body><div class="tech-bg">  <div class="tech-dots"></div>  <div class="tech-orbit-2"></div>  <div class="tech-orbit-1"></div>  <div class="tech-globe"></div></div><header>  <div class="brand">    <div class="logo-box">      <svg width="114" height="52" viewBox="0 0 240 112" xmlns="http://www.w3.org/2000/svg">        <path d="M 48 33 Q 120 -6 192 33 Q 120 4 48 33 Z" fill="#0B3178"/>        <path d="M 74 34 Q 120 12 166 34 L 160 40 Q 120 22 80 40 Z" fill="#D71920"/>        <g transform="skewX(-15) translate(22, 0)">          <path d="M 52 44 H 28 C 19 44 15 48 15 56 V 62 C 15 70 19 74 28 74 H 52 V 65 H 30 C 26 65 25 64 25 60 V 58 C 25 54 26 53 30 53 H 52 Z" fill="#0B3178"/>          <path d="M 60 74 V 44 H 71 L 90 62 V 44 H 100 V 74 H 89 L 70 56 V 74 Z" fill="#0B3178"/>          <path d="M 110 44 H 121 V 65 H 143 V 74 H 110 Z" fill="#0B3178"/>          <path d="M 188 44 H 164 C 155 44 151 48 151 56 V 62 C 151 70 155 74 164 74 H 188 V 65 H 166 C 162 65 161 64 161 60 V 58 C 161 54 162 53 166 53 H 188 Z" fill="#0B3178"/>        </g>        <path d="M 74 82 Q 120 104 166 82 L 160 76 Q 120 94 80 76 Z" fill="#D71920"/>        <path d="M 48 83 Q 120 122 192 83 Q 120 112 48 83 Z" fill="#0B3178"/>      </svg>    </div>    <div class="brand-info">      <h1>CNLC | HALFAYA PROJECT</h1>      <p>Excellence Leading The Future • Staff & License Portal</p>    </div>  </div>  <div class="header-actions">    <div class="modern-clock" aria-label="Current date and time"><span class="clock-dot"></span><div><div class="clock-time" id="liveClock">00:00:00</div><div class="clock-date" id="liveDate">--</div></div></div><span class="mode-badge" id="modeBadge">👁 Read-Only Mode</span>    <button class="hdr-btn login" id="btnAuth" onclick="openAuth()">✎  Enable Editing</button>    <button class="hdr-btn export-btn" onclick="exportCSV()">▣  Export Excel</button>    <button class="hdr-btn" id="btnReset" style="display:none" onclick="resetData()">Reset Data</button>  </div></header><div class="container">  <div class="glass-col">    <div class="col-header">      <span class="col-title">Staff Directory & License Registry</span>      <span class="pill-count" id="empCount" aria-live="polite">47 Employees</span>    </div>    <div class="search-grid">      <input type="text" id="txtSearch" placeholder="🔍 Search Name, National ID, Position, or License..." oninput="scheduleRender()">      <select id="posFilter" onchange="renderTable()">        <option value="">All Positions</option>      </select>    </div>    <div class="table-box">      <table>        <thead>          <tr>            <th style="width:54px">No.</th>            <th>Full Name</th>            <th>Position</th>            <th>License No.</th>            <th>License Status</th><th>Medical Status</th>          </tr>        </thead>        <tbody id="empTableBody"></tbody>      </table>    </div>  </div>  <div class="glass-col">    <div class="col-header">      <span class="col-title">Employee Profile & License Verification</span>      <span class="pill-count" id="selBadge">ID #1</span>    </div>    <div class="profile-content" id="profileWrap">      <div class="profile-identity"><div class="employee-avatar" id="employeeAvatar">--</div><div class="identity-copy"><div class="identity-name" id="profileName">Select an employee</div><div class="identity-sub" id="profilePosition">Employee profile</div></div></div>      <div class="row-id-name" id="newNameRow" style="display:none">        <div>          <label class="lbl">Full Name</label>          <input type="text" id="txtNewName" placeholder="Enter full name" readonly>        </div>      </div>      <div class="row-2">        <div>          <label class="lbl">Position</label>          <input type="text" id="txtPosition" readonly>        </div>        <div>          <label class="lbl">Phone Number</label>          <input type="text" id="txtPhone" readonly><button class="copy-btn" type="button" title="Copy phone number" onclick="copyField('txtPhone',this)">⧉</button>        </div>      </div>      <div class="row-2">        <div>          <label class="lbl">Nationality</label>          <input type="text" id="txtNationality" readonly>        </div>        <div>          <label class="lbl">National ID</label>          <input type="text" id="txtNationalID" readonly><button class="copy-btn" type="button" title="Copy national ID" onclick="copyField('txtNationalID',this)">⧉</button>        </div>      </div>      <div class="row-2">        <div>          <label class="lbl">License Category</label>          <select id="txtLicenseCategory" onchange="filterLicenseOptions()" disabled><option value="">Select Category</option></select>        </div>        <div>          <label class="lbl">License Number</label>          <input type="text" id="txtLicense" oninput="onLicenseNumberInput()" placeholder="Enter license number" readonly>        </div>      </div>      <div class="row-2">        <div>          <label class="lbl">License Expiry Date</label>          <input type="date" id="txtLicenseExpiry" onchange="updateCompliance()" readonly>        </div>        <div>          <label class="lbl">Medical Expiry Date</label>          <input type="date" id="txtMedicalExpiry" onchange="updateCompliance()" readonly>        </div>      </div>      <div class="row-2">        <div>          <label class="lbl">Date of Birth</label>          <input type="date" id="txtDOB" onchange="calcAge()" readonly>        </div>        <div>          <label class="lbl">Age</label>          <input type="number" id="txtAge" readonly>        </div>      </div>      <div id="complianceAlert" class="compliance-alert"><span class="alert-icon">ℹ</span><span>Select an employee to view license and medical validity.</span></div>      <label class="lbl">Driver's License Entitlement Details (Auto-Fetched)</label>      <div class="lic-details-box" id="licenseDetails">Select any employee from the directory to view license details.</div>      <div class="admin-bar" id="adminBar">        <button class="btn-act b-add" onclick="addEmployee()">+ Add New</button>        <button class="btn-act b-upd" onclick="updateEmployee()">✓ Update</button>        <button class="btn-act b-del" onclick="deleteEmployee()">✕ Delete</button>        <button class="btn-act b-clr" onclick="clearForm()">↺ Clear</button>      </div>    </div>  </div></div><footer>  <div class="dev-badge">    <span class="green-dot"></span>    <span>CNLC Halfaya Project System • Designed & Developed by <strong>Ali Hassan Zwer</strong></span>  </div></footer><div class="modal-bg" id="authModal">  <div class="modal-card">    <h3>Editing Access</h3>    <p>Enter the password to enable adding, editing, and deleting records. Viewing and searching remain available without a password.</p>    <input type="password" id="passInput" placeholder="Password..." onkeydown="if(event.key==='Enter') checkPass()">    <div class="modal-row">      <button style="background:#334155;color:#fff" onclick="closeAuth()">Cancel</button>      <button style="background:#0284c7;color:#fff" onclick="checkPass()">Enable Editing</button>    </div>  </div></div><script>
+const defaultEmployees = [
+  {no:1, name:"Layth Raed Kadhim", pos:"Field Engineer (F.E)", phone:"07806322736", dob:"1994-09-17", age:32, lic:"", nat:"Iraqi", nid:"199455361753", loc:"Halfaya Oil Field", medicalExamDate:"2026-08-21", medicalExpiry:"2027-08-20"},
+  {no:2, name:"Murtadha Hussein", pos:"Field Engineer (F.E)", phone:"07700462812", dob:"2001-12-06", age:24, lic:"", nat:"Iraqi", nid:"200188455092", loc:"Halfaya Oil Field"},
+  {no:3, name:"Murtatha Abdul Bari", pos:"Field Engineer (F.E)", phone:"07815711441", dob:"2000-06-16", age:26, lic:"", nat:"Iraqi", nid:"200040083586", loc:"Halfaya Oil Field"},
+  {no:4, name:"Ali Hassan Zwer", pos:"HSE", phone:"07876329998", dob:"1997-09-07", age:29, lic:"", nat:"Iraqi", nid:"199753130210", loc:"Halfaya Oil Field"},
+  {no:5, name:"Murtatha Sattar Jabbar", pos:"Co-Ordinator", phone:"07734611276", dob:"2001-01-01", age:25, lic:"", nat:"Iraqi", nid:"200197698446", loc:"Halfaya Oil Field"},
+  {no:6, name:"Abdul Reza Abdul Mohsen", pos:"Co-Ordinator", phone:"07716008089", dob:"2001-11-19", age:24, lic:"", nat:"Iraqi", nid:"200153311604", loc:"Halfaya Oil Field", medicalExamDate:"2026-08-23", medicalExpiry:"2027-08-22"},
+  {no:7, name:"Ahmmed Hasan Naema", pos:"Store Keeper", phone:"07861666460", dob:"1992-10-08", age:34, lic:"", nat:"Iraqi", nid:"199248655559", loc:"Halfaya Oil Field", medicalExamDate:"2026-08-25", medicalExpiry:"2027-08-24"},
+  {no:8, name:"Ali Raad Mohsen Thijel", pos:"Printing Engineer", phone:"07740716362", dob:"1998-10-04", age:28, lic:"", nat:"Iraqi", nid:"199883340942", loc:"Halfaya Oil Field", medicalExamDate:"2026-08-23", medicalExpiry:"2027-08-22"},
+  {no:9, name:"Muntadher Aqeel Hasan", pos:"Manager Assistant", phone:"07733630559", dob:"1997-11-03", age:29, lic:"", nat:"Iraqi", nid:"", loc:"Halfaya Oil Field"},
+  {no:10, name:"Muhaiman Raad Khadim", pos:"Logistics", phone:"07732020558", dob:"1991-06-22", age:35, lic:"", nat:"Iraqi", nid:"199119515765", loc:"Halfaya Oil Field", medicalExamDate:"2026-08-24", medicalExpiry:"2027-08-23"},
+  {no:11, name:"Khalid Assi Hassan", pos:"Supervisor Foreman", phone:"07802875717", dob:"1981-02-08", age:45, lic:"D01818143", nat:"Iraqi", nid:"198122127353", loc:"Halfaya Oil Field", licExpiry:"2033-02-01", medicalExamDate:"2026-08-22", medicalExpiry:"2027-08-21"},
+  {no:12, name:"Malik Abbas Resan", pos:"Base Foreman", phone:"07803728530 / 07712417950", dob:"1990-06-14", age:36, lic:"D00970198", nat:"Iraqi", nid:"199075995541", loc:"Halfaya Oil Field", licExpiry:"2032-01-22", medicalExamDate:"2025-09-27", medicalExpiry:"2026-09-26"},
+  {no:13, name:"Salman Chassib Abbas", pos:"Operator", phone:"07830535456", dob:"1987-09-20", age:39, lic:"D04954411", nat:"Iraqi", nid:"198747858651", loc:"Halfaya Oil Field", licExpiry:"2034-05-01", medicalExamDate:"2026-08-21", medicalExpiry:"2027-08-20"},
+  {no:14, name:"Majid Hameed Abass", pos:"Foreman", phone:"07705565561 / 07801011161", dob:"1987-10-01", age:39, lic:"D01118804", nat:"Iraqi", nid:"198772004773", loc:"Halfaya Oil Field", licExpiry:"2032-03-22", medicalExamDate:"2025-09-27", medicalExpiry:"2026-09-26"},
+  {no:15, name:"Malik Chacip Habeeb", pos:"Operator", phone:"07725208049", dob:"1986-09-04", age:40, lic:"D01832474", nat:"Iraqi", nid:"198600396445", loc:"Halfaya Oil Field", licExpiry:"2033-02-06", medicalExamDate:"2026-08-21", medicalExpiry:"2027-08-20"},
+  {no:16, name:"Karar Chasib Hashim", pos:"Operator", phone:"07709495769", dob:"1992-03-27", age:34, lic:"D05056621", nat:"Iraqi", nid:"199219938925", loc:"Halfaya Oil Field", licExpiry:"2034-06-03", medicalExamDate:"2026-08-21", medicalExpiry:"2027-08-20"},
+  {no:17, name:"Marwan Shaker Karim", pos:"Operator", phone:"07806267108", dob:"1993-07-24", age:33, lic:"", nat:"Iraqi", nid:"199376057065", loc:"Halfaya Oil Field", medicalExamDate:"2026-08-22", medicalExpiry:"2027-08-21"},
+  {no:18, name:"Abass Sabre Kelafa", pos:"Operator", phone:"07811907344", dob:"1993-09-09", age:33, lic:"", nat:"Iraqi", nid:"199322791730", loc:"Halfaya Oil Field"},
+  {no:19, name:"Ahmad Abar Saheb", pos:"Supervisor Foreman", phone:"07726800769 / 07823226013", dob:"1990-06-26", age:36, lic:"", nat:"Iraqi", nid:"199091309903", loc:"Halfaya Oil Field", medicalExamDate:"2026-08-23", medicalExpiry:"2027-08-22"},
+  {no:20, name:"Hussain Rabil Qasim", pos:"Foreman", phone:"07752004047", dob:"1985-11-01", age:41, lic:"D04941506", nat:"Iraqi", nid:"198536666744", loc:"Halfaya Oil Field", licExpiry:"2034-04-28"},
+  {no:21, name:"Muhammad Mahmod", pos:"Foreman", phone:"07705581381 / 07818006665", dob:"1989-04-25", age:37, lic:"", nat:"Iraqi", nid:"198927341204", loc:"Halfaya Oil Field", licExpiry:"2033-07-16", medicalExamDate:"2025-09-27", medicalExpiry:"2026-09-26"},
+  {no:22, name:"Sajad Juaad Kathim", pos:"Operator", phone:"07711987932", dob:"1995-06-12", age:31, lic:"", nat:"Iraqi", nid:"199596657491", loc:"Halfaya Oil Field", licExpiry:"2033-09-17"},
+  {no:23, name:"Shehab Ahmed", pos:"Operator", phone:"07712955130", dob:"1997-10-01", age:29, lic:"", nat:"Iraqi", nid:"199714390732", loc:"Halfaya Oil Field", licExpiry:"2034-02-07", medicalExamDate:"2025-09-27", medicalExpiry:"2026-09-26"},
+  {no:24, name:"Abbas Abul Azeem", pos:"Foreman", phone:"07705690521", dob:"1981-07-09", age:45, lic:"D01372110", nat:"Iraqi", nid:"198118882089", loc:"Halfaya Oil Field", licExpiry:"2032-07-18"},
+  {no:25, name:"Mustafa Mohamed", pos:"Operator", phone:"07802332366", dob:"2000-03-11", age:26, lic:"", nat:"Iraqi", nid:"200057952142", loc:"Halfaya Oil Field"},
+  {no:26, name:"Diaa Nehme", pos:"Operator", phone:"07721698887", dob:"1994-03-19", age:32, lic:"", nat:"Iraqi", nid:"199481967060", loc:"Halfaya Oil Field", licExpiry:"2032-05-21", medicalExamDate:"2026-08-22", medicalExpiry:"2027-08-21"},
+  {no:27, name:"Muhamad Khalid Sheltaq", pos:"Base Foreman", phone:"07724815253 / 07811855251", dob:"1991-03-26", age:35, lic:"IQDL03899296", nat:"Iraqi", nid:"199162366656", loc:"Halfaya Oil Field", licExpiry:"2031-01-09"},
+  {no:28, name:"Ahamad Saad Hamel", pos:"Operator", phone:"07716887750", dob:"1991-01-01", age:35, lic:"D01986595", nat:"Iraqi", nid:"199101038064", loc:"Halfaya Oil Field", licExpiry:"2033-03-12", medicalExamDate:"2025-09-27", medicalExpiry:"2026-09-26"},
+  {no:29, name:"Aqeel Jaleel Badai", pos:"Foreman", phone:"07809449415", dob:"1988-04-25", age:38, lic:"D01952645", nat:"Iraqi", nid:"198811210478", loc:"Halfaya Oil Field", licExpiry:"2033-03-04", medicalExamDate:"2026-08-21", medicalExpiry:"2027-08-20"},
+  {no:30, name:"Fazel Slaym Jasas", pos:"Operator", phone:"07830522350 / 07714970547", dob:"1983-01-11", age:43, lic:"", nat:"Iraqi", nid:"198304200440", loc:"Halfaya Oil Field", medicalExamDate:"2026-08-21", medicalExpiry:"2027-08-20"},
+  {no:31, name:"Hussain Kadim Shalow", pos:"Operator", phone:"07715331896 / 07830537209", dob:"1979-07-02", age:47, lic:"D01283141", nat:"Iraqi", nid:"197989118812", loc:"Halfaya Oil Field", licExpiry:"2032-06-11"},
+  {no:32, name:"Abbas Jassim Kareem", pos:"Operator", phone:"07716165109", dob:"1999-01-17", age:27, lic:"D04550034", nat:"Iraqi", nid:"199964942702", loc:"Halfaya Oil Field", licExpiry:"2034-01-20", medicalExamDate:"2026-08-21", medicalExpiry:"2027-08-20"},
+  {no:33, name:"Mortada Walid Latif", pos:"Operator", phone:"07740710918", dob:"2002-02-04", age:24, lic:"", nat:"Iraqi", nid:"200002080707", loc:"Halfaya Oil Field", medicalExamDate:"2025-09-27", medicalExpiry:"2026-09-26"},
+  {no:34, name:"Hamza Hasan Naeema", pos:"Operator", phone:"07861666460", dob:"1991-08-24", age:35, lic:"", nat:"Iraqi", nid:"199110236818", loc:"Halfaya Oil Field", medicalExamDate:"2026-08-21", medicalExpiry:"2027-08-20"},
+  {no:35, name:"Ali Chaseb Humi", pos:"Operator", phone:"07817436459", dob:"1994-01-17", age:32, lic:"D02041721", nat:"Iraqi", nid:"199438625128", loc:"Halfaya Oil Field", licExpiry:"2033-03-27", medicalExamDate:"2026-08-21", medicalExpiry:"2027-08-20"},
+  {no:36, name:"Ali Kareem Khalaf", pos:"Driver", phone:"07822535694 / 07716853762", dob:"1989-09-22", age:37, lic:"D05397808", nat:"Iraqi", nid:"199214229996", loc:"Halfaya Oil Field", licExpiry:"2034-09-30", medicalExamDate:"2026-08-21", medicalExpiry:"2027-08-20"},
+  {no:37, name:"Ali Hasan Radhi", pos:"Mechanic", phone:"07713788884", dob:"1978-07-01", age:48, lic:"D06176327", nat:"Iraqi", nid:"197886892447", loc:"Halfaya Oil Field", licExpiry:"2025-08-27", medicalExamDate:"2026-08-22", medicalExpiry:"2027-08-21"},
+  {no:38, name:"Hussain Karim Abbas", pos:"Mechanic", phone:"07733615585", dob:"1998-06-17", age:28, lic:"D05052624", nat:"Iraqi", nid:"199808623811", loc:"Halfaya Oil Field", licExpiry:"2034-05-25"},
+  {no:39, name:"Mustafa Faisal Madhosh", pos:"Driver", phone:"07711205742", dob:"1993-06-16", age:33, lic:"IQDL03931478", nat:"Iraqi", nid:"199367065433", loc:"Halfaya Oil Field", licExpiry:"2031-09-04"},
+  {no:40, name:"Mohaimen Edan Salem", pos:"Maintenance Operator", phone:"07719902036", dob:"2000-08-22", age:26, lic:"", nat:"Iraqi", nid:"200096725558", loc:"Halfaya Oil Field", medicalExamDate:"2026-08-21", medicalExpiry:"2027-08-20"},
+  {no:41, name:"Sajjad Hashim Kadhim", pos:"Maintenance Operator", phone:"07705553727", dob:"2000-05-12", age:26, lic:"", nat:"Iraqi", nid:"200000262501", loc:"Halfaya Oil Field", medicalExamDate:"2026-08-22", medicalExpiry:"2027-08-21"},
+  {no:42, name:"Mustafa Hammoud Karam", pos:"Field Engineer (F.E)", phone:"07728136912", dob:"2003-08-01", age:23, lic:"", nat:"Iraqi", nid:"200332363845", loc:"Halfaya Oil Field"},
+  {no:43, name:"Ammar Salman Fakher", pos:"Field Engineer (F.E)", phone:"07716439601", dob:"", age:"", lic:"", nat:"Iraqi", nid:"199779923947", loc:"Halfaya Oil Field"},
+  {no:44, name:"Mustafa Abbas Jabbr", pos:"Operator", phone:"07712719475", dob:"1997-05-15", age:29, lic:"", nat:"Iraqi", nid:"199702221379", loc:"Halfaya Oil Field"},
+  {no:45, name:"Ali Jassim Mohammed Sadir Al-Kaabi", pos:"Staff", phone:"", dob:"", age:"", lic:"", nat:"Iraqi", nid:"200042422224", loc:"Halfaya Oil Field"},
+  {no:46, name:"Ali Raheem Hamdan Hussain Al-Manshad", pos:"Staff", phone:"", dob:"", age:"", lic:"", nat:"Iraqi", nid:"199152908948", loc:"Halfaya Oil Field"},
+  {no:47, name:"Haider Mustafa Yaseen Haider Kalbi", pos:"Staff", phone:"", dob:"", age:"", lic:"", nat:"Iraqi", nid:"199268382314", loc:"Halfaya Oil Field"}
+];
+
+const licenseMap = {
+  "D01818143": {driver:"Khaled Assi Hassan", cat:"C", desc:"Issued for vehicles designed to transport goods, with a maximum weight exceeding 7,500 kg, including trailers weighing up to 750 kg."},
+  "IQDL03931478": {driver:"Mustafa Faisal Madhoush", cat:"B", desc:"Issued for cars and light vehicles designed to carry a maximum of 8 passengers, with a maximum weight not exceeding 3,500 kg."},
+  "D01832474": {driver:"Malik chasep habib", cat:"B", desc:"Issued for cars and light vehicles designed to carry a maximum of 8 passengers, with a maximum weight not exceeding 3,500 kg."},
+  "D02041721": {driver:"Ali chasep houmi", cat:"C", desc:"Issued for vehicles designed to transport goods, with a maximum weight exceeding 7,500 kg, including trailers weighing up to 750 kg."},
+  "D02914557": {driver:"sajjed jawad kazim", cat:"B", desc:"Issued for cars and light vehicles designed to carry a maximum of 8 passengers, with a maximum weight not exceeding 3,500 kg."},
+  "D04628427": {driver:"shehab ahmed darwish", cat:"B", desc:"Issued for cars and light vehicles designed to carry a maximum of 8 passengers, with a maximum weight not exceeding 3,500 kg."},
+  "D01118804": {driver:"Majid Hamid abbas", cat:"C", desc:"Issued for vehicles designed to transport goods, with a maximum weight exceeding 7,500 kg, including trailers weighing up to 750 kg."},
+  "D00970198": {driver:"Malik Abbas Rasan", cat:"C", desc:"Issued for vehicles designed to transport goods, with a maximum weight exceeding 7,500 kg, including trailers weighing up to 750 kg."},
+  "IQDL03899296": {driver:"Mohamed khaled shaltagh", cat:"C", desc:"Issued for vehicles designed to transport goods, with a maximum weight exceeding 7,500 kg, including trailers weighing up to 750 kg."},
+  "D05397808": {driver:"Ali kareim khalaf", cat:"B", desc:"Issued for cars and light vehicles designed to carry a maximum of 8 passengers, with a maximum weight not exceeding 3,500 kg."},
+  "D01372110": {driver:"Abbas abdel azim", cat:"C", desc:"Issued for vehicles designed to transport goods, with a maximum weight exceeding 7,500 kg, including trailers weighing up to 750 kg."},
+  "D04941506": {driver:"Hussein Rabal Qasim", cat:"C", desc:"Issued for vehicles designed to transport goods, with a maximum weight exceeding 7,500 kg, including trailers weighing up to 750 kg."},
+  "D05056621": {driver:"Karrar chasib hashim", cat:"B", desc:"Issued for cars and light vehicles designed to carry a maximum of 8 passengers, with a maximum weight not exceeding 3,500 kg."},
+  "D04550034": {driver:"Abbas jassim karim", cat:"B", desc:"Issued for cars and light vehicles designed to carry a maximum of 8 passengers, with a maximum weight not exceeding 3,500 kg."},
+  "D01234534": {driver:"Dheyaa neamah hussein", cat:"C", desc:"Issued for vehicles designed to transport goods, with a maximum weight exceeding 7,500 kg, including trailers weighing up to 750 kg."},
+  "D01952645": {driver:"Aqeel jalil badday", cat:"C", desc:"Issued for vehicles designed to transport goods, with a maximum weight exceeding 7,500 kg, including trailers weighing up to 750 kg."},
+  "D02371485": {driver:"Mohammed mahmood majeed", cat:"B", desc:"Issued for cars and light vehicles designed to carry a maximum of 8 passengers, with a maximum weight not exceeding 3,500 kg."},
+  "D05052624": {driver:"Hussein karim abbas", cat:"CE", desc:"Issued for category C vehicles with trailers or semi-trailers, with a maximum weight exceeding 750 kg."},
+  "D01283141": {driver:"Hussein Kadhim Shalo", cat:"B", desc:"Issued for cars and light vehicles designed to carry a maximum of 8 passengers, with a maximum weight not exceeding 3,500 kg."},
+  "D01986595": {driver:"Ahmed Saad Hamel", cat:"B", desc:"Issued for cars and light vehicles designed to carry a maximum of 8 passengers, with a maximum weight not exceeding 3,500 kg."},
+  "D06176327": {driver:"Ali Hassan Radi", cat:"BC", desc:"Combined category B and C; confirm the exact entitlement from the original license."},
+  "D04954411": {driver:"Salman Chassib Abbas", cat:"C", desc:"Issued for vehicles designed to transport goods, with a maximum weight exceeding 7,500 kg, including trailers weighing up to 750 kg."}
+};
+
+let employees = [];
+const STORAGE_KEY = "cnlc_halfaya_staff_v12";
+const DATE_WARNING_DAYS = 30;
+function normalizeEmployee(e) {
+  return {...e, licCat: e.licCat || "", licExpiry: e.licExpiry || "", medicalExamDate: e.medicalExamDate || "", medicalExpiry: e.medicalExpiry || ""};
+}
+
+function fillMissingDates(list) {
+  const source = new Map(defaultEmployees.map(e => [Number(e.no), e]));
+  let changed = false;
+  list.forEach(e => {
+    const src = source.get(Number(e.no));
+    if (!src) return;
+    ["licExpiry", "medicalExamDate", "medicalExpiry"].forEach(k => {
+      if (!e[k] && src[k]) { e[k] = src[k]; changed = true; }
+    });
+  });
+  return changed;
+}
+
+try {
+  const raw = localStorage.getItem(STORAGE_KEY);
+  employees = raw ? JSON.parse(raw).map(normalizeEmployee) : JSON.parse(JSON.stringify(defaultEmployees)).map(normalizeEmployee);
+  if (!Array.isArray(employees) || employees.length === 0) {
+    employees = JSON.parse(JSON.stringify(defaultEmployees)).map(normalizeEmployee);
+  }
+} catch (err) {
+  employees = JSON.parse(JSON.stringify(defaultEmployees)).map(normalizeEmployee);
+}
+if (fillMissingDates(employees)) saveStorage();
+
+let selectedIndex = 0;
+let isAdmin = false;
+let profileSwitchToken = 0;
+let lastRenderedCount = -1;
+let searchRenderTimer = null;
+
+function saveStorage() {
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(employees)); } catch (e) {}
+}
+
+function nextEmployeeNo() {
+  return employees.reduce((max, e) => Math.max(max, Number(e.no) || 0), 0) + 1;
+}
+
+function updateClock() {
+  const now = new Date();
+  document.getElementById("liveClock").textContent = now.toLocaleTimeString("en-US", {hour12:true});
+  document.getElementById("liveDate").textContent = now.toLocaleDateString("en-GB", {day:"2-digit", month:"short", year:"numeric"});
+}
+
+function populatePositions() {
+  const sel = document.getElementById("posFilter");
+  const prev = sel.value;
+  const list = [...new Set(employees.map(e => e.pos).filter(Boolean))];
+  sel.innerHTML = `<option value="">All Positions (${list.length})</option>`;
+  list.forEach(p => {
+    const o = document.createElement("option");
+    o.value = p;
+    o.textContent = p;
+    sel.appendChild(o);
+  });
+  sel.value = prev;
+}
+
+function getInitials(name) {
+  return (name || "").trim().split(/\s+/).filter(Boolean).slice(0,2).map(part => part[0].toUpperCase()).join("") || "--";
+}
+function copyField(id, button) {
+  const value = document.getElementById(id).value;
+  if (!value) return;
+  const done = () => { const old = button.textContent; button.textContent = "✓"; setTimeout(() => button.textContent = old, 900); };
+  if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(value).then(done).catch(() => fallbackCopy(value, done));
+  else fallbackCopy(value, done);
+}
+function fallbackCopy(value, done) {
+  const field = document.createElement("textarea"); field.value = value; document.body.appendChild(field); field.select();
+  try { document.execCommand("copy"); done(); } catch(e) {} field.remove();
+}
+
+function populateLicenseCategories() {
+  const category = document.getElementById("txtLicenseCategory");
+  const current = category.value;
+  const cats = [...new Set(Object.values(licenseMap).map(x => x.cat).filter(Boolean))].sort();
+  category.innerHTML = `<option value="">All Categories</option>` + cats.map(c => `<option value="${c}">${c}</option>`).join("");
+  category.value = cats.includes(current) ? current : "";
+  fetchLicense();
+}
+function filterLicenseOptions() {
+  fetchLicense();
+}
+
+function dateStatus(dateValue) {
+  if (!dateValue) return {key:"missing", label:"Not set", days:null};
+  const today = new Date(); today.setHours(0,0,0,0);
+  const date = new Date(dateValue + "T00:00:00");
+  const days = Math.ceil((date - today) / 86400000);
+  if (days < 0) return {key:"expired", label:"Expired", days};
+  if (days <= DATE_WARNING_DAYS) return {key:"warning", label:`Expires in ${days} day${days === 1 ? "" : "s"}`, days};
+  return {key:"ok", label:"Valid", days};
+}
+function statusBadge(status) {
+  const cls = status.key === "expired" ? "status-expired" : status.key === "warning" ? "status-warning" : status.key === "ok" ? "status-ok" : "";
+  return `<span class="status-pill ${cls}">${status.label}</span>`;
+}
+function updateCompliance() {
+  const lic = dateStatus(document.getElementById("txtLicenseExpiry").value);
+  const med = dateStatus(document.getElementById("txtMedicalExpiry").value);
+  ["txtLicenseExpiry","txtMedicalExpiry"].forEach(id => {
+    const el = document.getElementById(id); const st = dateStatus(el.value);
+    el.classList.remove("date-expired","date-warning");
+    if (st.key === "expired") el.classList.add("date-expired");
+    if (st.key === "warning") el.classList.add("date-warning");
+  });
+  const alertBox = document.getElementById("complianceAlert");
+  const problems = [];
+  if (lic.key === "expired") problems.push("Driver's license has expired.");
+  else if (lic.key === "warning") problems.push(`Driver's license ${lic.label.toLowerCase()}.`);
+  if (med.key === "expired") problems.push("Medical examination has expired.");
+  else if (med.key === "warning") problems.push(`Medical examination ${med.label.toLowerCase()}.`);
+  alertBox.className = "compliance-alert " + (problems.some(x => x.includes("expired")) ? "alert-danger" : problems.length ? "alert-warning" : "alert-ok");
+  alertBox.innerHTML = `<span class="alert-icon">${problems.some(x => x.includes("expired")) ? "⚠" : problems.length ? "⏳" : "✓"}</span><span>${problems.length ? problems.join("\n") : "License and medical examination dates are valid or not yet due."}</span>`;
+}
+
+function renderTable() {
+  const q = document.getElementById("txtSearch").value.toLowerCase().trim();
+  const posVal = document.getElementById("posFilter").value;
+  const tbody = document.getElementById("empTableBody");
+  tbody.innerHTML = "";
+  let count = 0;
+  employees.forEach((emp, idx) => {
+    const matchText = !q || `${emp.no} ${emp.name} ${emp.pos} ${emp.lic} ${emp.nid || ""} ${emp.licExpiry || ""} ${emp.medicalExpiry || ""}`.toLowerCase().includes(q);
+    const matchPos = !posVal || emp.pos === posVal;
+    if (matchText && matchPos) {
+      count++;
+      const tr = document.createElement("tr");
+      if (idx === selectedIndex) tr.className = "active";
+      tr.style.animationDelay = Math.min(count * 0.014, 0.32) + "s";
+      tr.onclick = () => selectEmployee(idx);
+      const licBadge = emp.lic ? `<span class="lic-pill">${emp.lic}</span>` : `<span class="lic-empty">—</span>`;
+      const roleBadge = `<span class="role-pill">${emp.pos || "Unassigned"}</span>`;
+      const licenseState = emp.lic ? statusBadge(dateStatus(emp.licExpiry)) : `<span class="license-state">Not registered</span>`;
+      const medicalState = statusBadge(dateStatus(emp.medicalExpiry));
+      tr.innerHTML = `<td><span class="id-tag">${emp.no}</span></td><td><strong>${emp.name}</strong></td><td>${roleBadge}</td><td>${licBadge}</td><td>${licenseState}</td><td>${medicalState}</td>`;
+      tbody.appendChild(tr);
+    }
+  });
+  if (count === 0) {
+    const tr = document.createElement("tr");
+    tr.className = "empty-row";
+    tr.innerHTML = `<td colspan="6">No matching employees found.</td>`;
+    tbody.appendChild(tr);
+  }
+  const countEl = document.getElementById("empCount");
+  countEl.textContent = `${count} Employees`;
+  if (count !== lastRenderedCount) {
+    lastRenderedCount = count;
+    countEl.classList.remove("bump");
+    void countEl.offsetWidth;
+    countEl.classList.add("bump");
+  }
+}
+
+function scheduleRender() {
+  clearTimeout(searchRenderTimer);
+  searchRenderTimer = setTimeout(renderTable, 120);
+}
+
+function selectEmployee(idx) {
+  selectedIndex = idx;
+  const emp = employees[idx];
+  const wrap = document.getElementById("profileWrap");
+  const token = ++profileSwitchToken;
+  wrap.classList.add("switching");
+  setTimeout(() => {
+    if (token !== profileSwitchToken) return;
+    document.getElementById("selBadge").textContent = `ID #${emp.no}`;
+    document.getElementById("newNameRow").style.display = "none";
+    document.getElementById("txtNewName").value = "";
+    document.getElementById("profileName").textContent = emp.name;
+    document.getElementById("profilePosition").textContent = emp.pos || "Employee";
+    document.getElementById("employeeAvatar").textContent = getInitials(emp.name);
+    document.getElementById("txtPosition").value = emp.pos;
+    document.getElementById("txtPhone").value = emp.phone;
+    document.getElementById("txtNationality").value = emp.nat || "Iraqi";
+    document.getElementById("txtNationalID").value = emp.nid || "";
+    document.getElementById("txtLicense").value = emp.lic;
+    document.getElementById("txtLicenseCategory").value = emp.licCat || (emp.lic && licenseMap[emp.lic] ? licenseMap[emp.lic].cat : "");
+    document.getElementById("txtLicenseExpiry").value = emp.licExpiry || "";
+    document.getElementById("txtMedicalExpiry").value = emp.medicalExpiry || "";
+    document.getElementById("txtDOB").value = emp.dob;
+    document.getElementById("txtAge").value = emp.age;
+    updateCompliance();
+    fetchLicense();
+    requestAnimationFrame(() => {
+      if (token === profileSwitchToken) wrap.classList.remove("switching");
+    });
+  }, 120);
+  renderTable();
+}
+
+function onLicenseNumberInput() {
+  const lic = document.getElementById("txtLicense").value.trim().toUpperCase();
+  const info = lic ? licenseMap[lic] : null;
+  if (info) document.getElementById("txtLicenseCategory").value = info.cat || "";
+  fetchLicense();
+}
+
+function fetchLicense() {
+  const lic = document.getElementById("txtLicense").value.trim().toUpperCase();
+  const category = document.getElementById("txtLicenseCategory");
+  const box = document.getElementById("licenseDetails");
+  const categoryDescriptions = {
+    B: "Issued for cars and light vehicles designed to carry a maximum of 8 passengers, with a maximum weight not exceeding 3,500 kg.",
+    C: "Issued for vehicles designed to transport goods, with a maximum weight exceeding 7,500 kg, including trailers weighing up to 750 kg.",
+    CE: "Issued for category C vehicles with trailers or semi-trailers, with a maximum weight exceeding 750 kg.",
+    BC: "Combined category B and C; confirm the exact entitlement from the original license."
+  };
+  const info = lic ? licenseMap[lic] : null;
+  if (info) {
+    const selectedCategory = category.value || info.cat || "";
+    const description = categoryDescriptions[selectedCategory] || info.desc || "";
+    box.className = "lic-details-box license-alert has-license";
+    box.innerHTML = `<span class="alert-icon">✓</span><span>• Driver Name (Registry): ${info.driver}
+• License Number: ${lic}
+• Authorized Category: [ ${selectedCategory} ]
+• Vehicle Entitlement:
+${description}</span>`;
+  } else if (lic) {
+    const selectedCategory = category.value;
+    const description = categoryDescriptions[selectedCategory] || "Select the license category to display its automatic description.";
+    box.className = "lic-details-box license-alert";
+    box.innerHTML = `<span class="alert-icon">ℹ</span><span>License number: ${lic}
+Category: ${selectedCategory || "Not selected"}
+${description}</span>`;
+  } else {
+    box.className = "lic-details-box license-alert";
+    box.innerHTML = `<span class="alert-icon">⚠</span><span>Enter a driver's license number and choose its category.</span>`;
+  }
+}
+
+function calcAge() {
+  const dob = document.getElementById("txtDOB").value;
+  if (dob) {
+    const diff = Date.now() - new Date(dob).getTime();
+    document.getElementById("txtAge").value = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+  }
+}
+
+function openAuth() {
+  if (isAdmin) {
+    setAdmin(false);
+  } else {
+    document.getElementById("passInput").value = "";
+    document.getElementById("authModal").classList.add("open");
+    setTimeout(() => document.getElementById("passInput").focus(), 100);
+  }
+}
+
+function closeAuth() {
+  document.getElementById("authModal").classList.remove("open");
+}
+
+async function checkPass() {
+  const input = document.getElementById("passInput");
+  const password = input.value;
+  // PBKDF2-SHA256 verifier. The password itself is not stored in this HTML file.
+  const salt = new Uint8Array([0x9d,0x7a,0x4c,0x21,0xe8,0xb5,0x63,0xf0,0xa1,0xc4,0xd7,0xe9,0x02,0x6b,0x5f,0x18]);
+  const expected = "bd8be39d83b6d8139f6ada8ba6930ca3640553fd50d3b45e7bb5a0ed6f4197f5";
+  try {
+    if (!window.crypto || !crypto.subtle) throw new Error("Secure password verification is unavailable in this browser.");
+    const material = await crypto.subtle.importKey("raw", new TextEncoder().encode(password), "PBKDF2", false, ["deriveBits"]);
+    const bits = await crypto.subtle.deriveBits({name:"PBKDF2", salt, iterations:180000, hash:"SHA-256"}, material, 256);
+    const actual = Array.from(new Uint8Array(bits), b => b.toString(16).padStart(2,"0")).join("");
+    if (actual === expected) {
+      setAdmin(true);
+      closeAuth();
+      input.value = "";
+    } else {
+      input.value = "";
+      alert("Incorrect Password!");
+    }
+  } catch (err) {
+    alert(err.message || "Could not verify password.");
+  }
+}
+
+function setAdmin(state) {
+  isAdmin = state;
+  document.body.classList.toggle("admin-mode", state);
+  ["txtNewName","txtPosition","txtPhone","txtNationality","txtNationalID","txtDOB","txtAge","txtLicense","txtLicenseExpiry","txtMedicalExpiry"].forEach(id => {
+    document.getElementById(id).readOnly = !state;
+  });
+  document.getElementById("txtLicenseCategory").disabled = !state;
+  const badge = document.getElementById("modeBadge");
+  const btnAuth = document.getElementById("btnAuth");
+  const adminBar = document.getElementById("adminBar");
+  const btnReset = document.getElementById("btnReset");
+  if (state) {
+    badge.textContent = "✏️ Editing Enabled";
+    badge.classList.add("unlocked");
+    btnAuth.textContent = "Lock Admin";
+    adminBar.classList.add("show");
+    btnReset.style.display = "inline-block";
+  } else {
+    badge.textContent = "👁 Read-Only Mode";
+    badge.classList.remove("unlocked");
+    btnAuth.textContent = "Enable Editing";
+    adminBar.classList.remove("show");
+    btnReset.style.display = "none";
+  }
+}
+
+function addEmployee() {
+  if (!isAdmin) return;
+  const nameRow = document.getElementById("newNameRow");
+  const nameInput = document.getElementById("txtNewName");
+  if (nameRow.style.display === "none") {
+    clearForm();
+    return;
+  }
+  const name = nameInput.value.trim();
+  if (!name) return alert("Please enter the full name.");
+  employees.push({
+    no: nextEmployeeNo(),
+    name: name,
+    pos: document.getElementById("txtPosition").value,
+    phone: document.getElementById("txtPhone").value,
+    nat: document.getElementById("txtNationality").value || "Iraqi",
+    nid: document.getElementById("txtNationalID").value.trim(),
+    loc: "Halfaya Oil Field",
+    dob: document.getElementById("txtDOB").value,
+    age: document.getElementById("txtAge").value,
+    lic: document.getElementById("txtLicense").value.trim().toUpperCase(),
+    licCat: document.getElementById("txtLicenseCategory").value,
+    licExpiry: document.getElementById("txtLicenseExpiry").value,
+    medicalExamDate: "",
+    medicalExpiry: document.getElementById("txtMedicalExpiry").value
+  });
+  saveStorage();
+  populatePositions();
+  alert("Employee added successfully!");
+  selectEmployee(employees.length - 1);
+}
+
+function updateEmployee() {
+  if (!isAdmin) return;
+  if (selectedIndex < 0) return alert("Please select an employee first.");
+  const current = employees[selectedIndex] || {};
+  employees[selectedIndex] = {
+    no: current.no,
+    name: current.name || "",
+    pos: document.getElementById("txtPosition").value,
+    phone: document.getElementById("txtPhone").value,
+    nat: document.getElementById("txtNationality").value,
+    nid: document.getElementById("txtNationalID").value.trim(),
+    loc: current.loc || "Halfaya Oil Field",
+    dob: document.getElementById("txtDOB").value,
+    age: document.getElementById("txtAge").value,
+    lic: document.getElementById("txtLicense").value.trim().toUpperCase(),
+    licCat: document.getElementById("txtLicenseCategory").value,
+    licExpiry: document.getElementById("txtLicenseExpiry").value,
+    medicalExamDate: current.medicalExamDate || "",
+    medicalExpiry: document.getElementById("txtMedicalExpiry").value
+  };
+  saveStorage();
+  populatePositions();
+  alert("Record updated successfully!");
+  selectEmployee(selectedIndex);
+}
+
+function deleteEmployee() {
+  if (!isAdmin) return;
+  if (selectedIndex < 0) return alert("Please select an employee first.");
+  if (confirm(`Delete ${employees[selectedIndex].name}?`)) {
+    employees.splice(selectedIndex, 1);
+    saveStorage();
+    clearForm();
+    populatePositions();
+    renderTable();
+  }
+}
+
+function clearForm() {
+  selectedIndex = -1;
+  document.getElementById("selBadge").textContent = "New Entry";
+  document.getElementById("newNameRow").style.display = "";
+  document.getElementById("txtNewName").value = "";
+  setTimeout(() => document.getElementById("txtNewName").focus(), 60);
+  ["txtPosition","txtPhone","txtNationalID","txtDOB","txtAge","txtLicenseExpiry","txtMedicalExpiry"].forEach(id => document.getElementById(id).value = "");
+  document.getElementById("txtLicenseCategory").value = "";
+  document.getElementById("txtLicense").value = "";
+  document.getElementById("txtNationality").value = "Iraqi";
+  document.getElementById("profileName").textContent = "New Employee";
+  document.getElementById("profilePosition").textContent = "Employee profile";
+  document.getElementById("employeeAvatar").textContent = "--";
+  document.getElementById("licenseDetails").textContent = "Select any employee from the directory to view license details."; updateCompliance();
+  renderTable();
+}
+
+function exportCSV() {
+  let csv = "No.,Full Name,Position,Phone Number,Nationality,National ID,Work Location,Date of Birth,Age,License Number,License Expiry Date,Medical Exam Date,Medical Expiry Date\n";
+  employees.forEach(e => {
+    csv += `"${e.no}","${e.name}","${e.pos}","${e.phone}","${e.nat || 'Iraqi'}","${e.nid || ''}","${e.loc || 'Halfaya Oil Field'}","${e.dob || ''}","${e.age || ''}","${e.lic || ''}","${e.licExpiry || ''}","${e.medicalExamDate || ''}","${e.medicalExpiry || ''}"\n`;
+  });
+  const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "CNLC_Halfaya_Employees_Updated.csv";
+  link.click();
+}
+
+function resetData() {
+  if (!isAdmin) return;
+  if (confirm("Restore all 47 Iraqi employee records?")) {
+    employees = JSON.parse(JSON.stringify(defaultEmployees)).map(normalizeEmployee);
+    saveStorage();
+    clearForm();
+    populatePositions();
+    renderTable();
+  }
+}
+
+updateClock();
+setInterval(updateClock, 1000);
+populatePositions();
+populateLicenseCategories();
+renderTable();
+selectEmployee(0);
+</script>
+</body>
+</html>
+
